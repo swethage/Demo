@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Leads_003 On Test Start executed]]>
-    </line>
-    <line>
-      <![CDATA[Leads_003 On Test Success executed]]>
-    </line>
-    <line>
-      <![CDATA[Leads_002 On Test Start executed]]>
-    </line>
-    <line>
-      <![CDATA[Leads_002 On Test Success executed]]>
-    </line>
-    <line>
-      <![CDATA[demo On Test Start executed]]>
-    </line>
-    <line>
-      <![CDATA[demo On Test Success executed]]>
-    </line>
     <line>
       <![CDATA[Leads_001 On Test Start executed]]>
     </line>
     <line>
-      <![CDATA[Leads_001 On Test Skipped executed]]>
+      <![CDATA[Leads_001 On Test Success executed]]>
     </line>
     <line>
       <![CDATA[Con_001 On Test Start executed]]>
@@ -32,25 +14,20 @@
       <![CDATA[Con_001 On Test Success executed]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-03-26T10:25:20 IST" name="Suite" finished-at="2025-03-26T10:26:54 IST" duration-ms="93831">
+  <suite started-at="2025-04-02T10:34:37 IST" name="Suite" finished-at="2025-04-02T10:35:28 IST" duration-ms="50483">
     <groups>
-      <group name="Sanity">
-        <method signature="TC_002.Leads_002()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" name="Leads_002" class="testCaseRepo.TC_002"/>
-        <method signature="TC_003.Leads_003()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" name="Leads_003" class="testCaseRepo.TC_003"/>
-      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC_001Test.Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" name="Leads_001" class="testCaseRepo.TC_001Test"/>
-        <method signature="TC_002.Leads_002()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" name="Leads_002" class="testCaseRepo.TC_002"/>
-        <method signature="TC_004.Con_001()[pri:0, instance:testCaseRepo.TC_004@59309333]" name="Con_001" class="testCaseRepo.TC_004"/>
+        <method signature="TC_001Test.Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" name="Leads_001" class="testCaseRepo.TC_001Test"/>
+        <method signature="TC_004.Con_001()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" name="Con_001" class="testCaseRepo.TC_004"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="TC_001Test.Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" name="Leads_001" class="testCaseRepo.TC_001Test"/>
-        <method signature="TC_004.Con_001()[pri:0, instance:testCaseRepo.TC_004@59309333]" name="Con_001" class="testCaseRepo.TC_004"/>
+        <method signature="TC_001Test.Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" name="Leads_001" class="testCaseRepo.TC_001Test"/>
+        <method signature="TC_004.Con_001()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" name="Con_001" class="testCaseRepo.TC_004"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-03-26T10:25:20 IST" name="Test" finished-at="2025-03-26T10:26:54 IST" duration-ms="93831">
+    <test started-at="2025-04-02T10:34:37 IST" name="Test" finished-at="2025-04-02T10:35:28 IST" duration-ms="50483">
       <class name="testCaseRepo.TC_001Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" started-at="2025-03-26T10:26:25 IST" name="launchBrowser" finished-at="2025-03-26T10:26:26 IST" duration-ms="1768" status="FAIL">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" started-at="2025-04-02T10:34:37 IST" name="launchBrowser" finished-at="2025-04-02T10:34:40 IST" duration-ms="3003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,502 +35,44 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=134.0.6998.119)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: JavaScript code failed
-from unknown command: 'Runtime.evaluate' wasn't found
-  (Session info: chrome=134.0.6998.119)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
-at genericUtility.SeleniumUtility.maximizedWindow(SeleniumUtility.java:34)
-at genericUtility.BaseClass.launchBrowser(BaseClass.java:61)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" started-at="2025-03-26T10:26:26 IST" name="loginOperation" finished-at="2025-03-26T10:26:26 IST" duration-ms="27" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
-  (Session info: chrome=134.0.6998.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, findElement {using=name, value=user_name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
-  (Session info: chrome=134.0.6998.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, findElement {using=name, value=user_name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-at objectRepo.LoginPage.loginToApplication(LoginPage.java:52)
-at genericUtility.BaseClass.loginOperation(BaseClass.java:75)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" started-at="2025-04-02T10:34:40 IST" name="loginOperation" finished-at="2025-04-02T10:34:44 IST" duration-ms="4040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOperation -->
-        <test-method signature="Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" started-at="2025-03-26T10:26:26 IST" name="Leads_001" finished-at="2025-03-26T10:26:26 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
-  (Session info: chrome=134.0.6998.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, findElement {using=name, value=user_name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
-  (Session info: chrome=134.0.6998.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, findElement {using=name, value=user_name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-at objectRepo.LoginPage.loginToApplication(LoginPage.java:52)
-at genericUtility.BaseClass.loginOperation(BaseClass.java:75)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="Leads_001()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" started-at="2025-04-02T10:34:44 IST" name="Leads_001" finished-at="2025-04-02T10:35:00 IST" duration-ms="15400" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Leads_001 On Test Skipped executed]]>
+              <![CDATA[Leads_001 On Test Start executed]]>
+            </line>
+            <line>
+              <![CDATA[Leads_001 On Test Success executed]]>
             </line>
           </reporter-output>
         </test-method> <!-- Leads_001 -->
-        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" started-at="2025-03-26T10:26:26 IST" name="logoutOperation" finished-at="2025-03-26T10:26:26 IST" duration-ms="25" status="FAIL">
-          <exception class="org.openqa.selenium.json.JsonException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, actions {actions=[org.openqa.selenium.interactions.Sequence@196ae579]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, actions {actions=[org.openqa.selenium.interactions.Sequence@196ae579]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
-at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-at java.base/java.util.Map.forEach(Map.java:713)
-at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-at org.openqa.selenium.json.Json.toJson(Json.java:133)
-at org.openqa.selenium.json.Json.toJson(Json.java:119)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
-at objectRepo.HomePage.signOutOperation(HomePage.java:77)
-at genericUtility.BaseClass.logoutOperation(BaseClass.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:622)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
-at org.openqa.selenium.json.Json.toJson(Json.java:131)
-... 49 more
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
-... 70 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@src='themes/softed/images/user.PNG']"}
-  (Session info: chrome=134.0.6998.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f203431186ca515fff36f8d9da0d4f3f, findElement {using=xpath, value=//img[@src='themes/softed/images/user.PNG']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.119, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\geswe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50420/devtoo..., se:cdpVersion: 134.0.6998.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f203431186ca515fff36f8d9da0d4f3f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:259)
-at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:208)
-at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
-at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
-... 75 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.json.JsonException -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" started-at="2025-04-02T10:35:00 IST" name="logoutOperation" finished-at="2025-04-02T10:35:02 IST" duration-ms="2240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutOperation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_001Test@1aa7ecca]" started-at="2025-03-26T10:26:26 IST" name="closeBrowser" finished-at="2025-03-26T10:26:27 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_001Test@52bf72b5]" started-at="2025-04-02T10:35:02 IST" name="closeBrowser" finished-at="2025-04-02T10:35:03 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testCaseRepo.TC_001Test -->
       <class name="testCaseRepo.TC_003">
-        <test-method is-config="true" signature="dbConnection()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:20 IST" name="dbConnection" finished-at="2025-03-26T10:25:20 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="dbConnection()[pri:0, instance:testCaseRepo.TC_003@59309333]" started-at="2025-04-02T10:34:37 IST" name="dbConnection" finished-at="2025-04-02T10:34:37 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dbConnection -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:20 IST" name="launchBrowser" finished-at="2025-03-26T10:25:28 IST" duration-ms="7592" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:28 IST" name="loginOperation" finished-at="2025-03-26T10:25:32 IST" duration-ms="3938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginOperation -->
-        <test-method signature="Leads_003()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:32 IST" name="Leads_003" finished-at="2025-03-26T10:25:44 IST" duration-ms="11686" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Leads_003 On Test Start executed]]>
-            </line>
-            <line>
-              <![CDATA[Leads_003 On Test Success executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Leads_003 -->
-        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:44 IST" name="logoutOperation" finished-at="2025-03-26T10:25:49 IST" duration-ms="5718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutOperation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:25:49 IST" name="closeBrowser" finished-at="2025-03-26T10:25:50 IST" duration-ms="318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDBConnection()[pri:0, instance:testCaseRepo.TC_003@7b9a4292]" started-at="2025-03-26T10:26:55 IST" name="closeDBConnection" finished-at="2025-03-26T10:26:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeDBConnection()[pri:0, instance:testCaseRepo.TC_003@59309333]" started-at="2025-04-02T10:35:29 IST" name="closeDBConnection" finished-at="2025-04-02T10:35:29 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDBConnection -->
       </class> <!-- testCaseRepo.TC_003 -->
-      <class name="testCaseRepo.TC_002">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:25:50 IST" name="launchBrowser" finished-at="2025-03-26T10:25:52 IST" duration-ms="2445" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:25:52 IST" name="loginOperation" finished-at="2025-03-26T10:25:56 IST" duration-ms="4163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginOperation -->
-        <test-method signature="Leads_002()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:25:56 IST" name="Leads_002" finished-at="2025-03-26T10:26:11 IST" duration-ms="15151" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Leads_002 On Test Start executed]]>
-            </line>
-            <line>
-              <![CDATA[Leads_002 On Test Success executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Leads_002 -->
-        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:26:11 IST" name="logoutOperation" finished-at="2025-03-26T10:26:14 IST" duration-ms="2225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutOperation -->
-        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:26:14 IST" name="loginOperation" finished-at="2025-03-26T10:26:14 IST" duration-ms="350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginOperation -->
-        <test-method signature="demo()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:26:14 IST" name="demo" finished-at="2025-03-26T10:26:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[demo On Test Start executed]]>
-            </line>
-            <line>
-              <![CDATA[demo On Test Success executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- demo -->
-        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:26:14 IST" name="logoutOperation" finished-at="2025-03-26T10:26:24 IST" duration-ms="10270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutOperation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_002@9f116cc]" started-at="2025-03-26T10:26:24 IST" name="closeBrowser" finished-at="2025-03-26T10:26:25 IST" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCaseRepo.TC_002 -->
       <class name="testCaseRepo.TC_004">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_004@59309333]" started-at="2025-03-26T10:26:27 IST" name="launchBrowser" finished-at="2025-03-26T10:26:29 IST" duration-ms="2684" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testCaseRepo.TC_004@37afeb11]" started-at="2025-04-02T10:35:03 IST" name="launchBrowser" finished-at="2025-04-02T10:35:05 IST" duration-ms="2619" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -564,11 +83,11 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_004@59309333]" started-at="2025-03-26T10:26:29 IST" name="loginOperation" finished-at="2025-03-26T10:26:34 IST" duration-ms="4826" status="PASS">
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" started-at="2025-04-02T10:35:05 IST" name="loginOperation" finished-at="2025-04-02T10:35:10 IST" duration-ms="4663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginOperation -->
-        <test-method signature="Con_001()[pri:0, instance:testCaseRepo.TC_004@59309333]" started-at="2025-03-26T10:26:34 IST" name="Con_001" finished-at="2025-03-26T10:26:51 IST" duration-ms="17018" status="PASS">
+        <test-method signature="Con_001()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" started-at="2025-04-02T10:35:10 IST" name="Con_001" finished-at="2025-04-02T10:35:25 IST" duration-ms="15472" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Con_001 On Test Start executed]]>
@@ -578,11 +97,11 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
             </line>
           </reporter-output>
         </test-method> <!-- Con_001 -->
-        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_004@59309333]" started-at="2025-03-26T10:26:51 IST" name="logoutOperation" finished-at="2025-03-26T10:26:54 IST" duration-ms="2559" status="PASS">
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" started-at="2025-04-02T10:35:25 IST" name="logoutOperation" finished-at="2025-04-02T10:35:27 IST" duration-ms="2050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutOperation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_004@59309333]" started-at="2025-03-26T10:26:54 IST" name="closeBrowser" finished-at="2025-03-26T10:26:54 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCaseRepo.TC_004@37afeb11]" started-at="2025-04-02T10:35:27 IST" name="closeBrowser" finished-at="2025-04-02T10:35:28 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -114,7 +114,7 @@
 						<version>3.5.2</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng_GroupExecution.xml</suiteXmlFile>
+								<suiteXmlFile>testng_GruopExecution.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
